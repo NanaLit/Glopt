@@ -1,0 +1,20 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+@import 'base/variables.scss';
+
+@import 'blocks/header.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/media.scss';

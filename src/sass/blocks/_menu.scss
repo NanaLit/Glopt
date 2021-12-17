@@ -1,0 +1,63 @@
+.menu {
+    display: flex;
+    list-style: none;
+    width: 600px;
+    height: 23px;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        border-right: 1px dotted #fff;
+        padding-right: 10px;
+    }
+    :last-child {
+        border-right: none;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 23px;
+        color: #fff;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: $main-color;
+            transition: 0.3s all;
+        }
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+            color: $main-color;
+            &:before {
+                content: '';
+                width: 100%;
+            }
+            
+        }
+    }
+}
+.hamburger {
+    position: absolute;
+    visibility: hidden;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        &:hover {
+            background: $main-color;
+        }
+    }
+}
