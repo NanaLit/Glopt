@@ -1,0 +1,21 @@
+.delivery {
+    padding-top: 51px;
+    padding-bottom: 57px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        gap: 30px;
+        margin-top: 30px;
+        img {
+            width: 100%;
+        }
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        color: #3a3a3a;
+    }
+    
+}

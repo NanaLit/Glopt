@@ -1,0 +1,28 @@
+.agent {
+    padding-top: 58px;
+    padding-bottom: 75px;
+    background-image: url('../img/agent.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__image {
+        width: 102px;
+        height: 102px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+    }
+    &__descr {
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        margin-top: 22px;
+    }
+}

@@ -48,6 +48,9 @@
             font-weight: 500;
         }
     }
+    .description {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -102,14 +105,35 @@
             margin-top: 0;
         }
     }
-
+    .prices {
+        padding-bottom: 40px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-auto-rows: auto;
+            gap: 30px;
+        }
+        &__item {
+            .price {
+                font-size: 20px;
+            }
+            .descr {
+                margin: 19px 20px 15px;
+            }
+        }
+    }
+    .btn {
+        &_card {
+            bottom: 15px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
-    nav {
+    .menu {
         display: none;
     }
     .header {
@@ -148,12 +172,100 @@
                 font-size: 12px;
             }
         }
-    }   
+    }
+    .btn {
+        &:hover {
+            box-shadow: 0;
+        }
+    } 
+    .work {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, auto);
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         width: 100%;
         padding: 0 10px;
+    }
+    .header {
+        max-width: 300px;
+        &__wrapper {
+            width: 300px;
+        }
+        &__description {
+            width: 160px;
+        }
+        &__phone {
+            display: none;
+        }
+    }
+    .promo {
+        padding-bottom: 40px;
+        &__service {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-auto-rows: auto;
+        }
+        &__divider {
+            &:before {
+                width: 130px;
+            }
+            &:after {
+                width: 130px;
+            }
+        }
+    }
+    .title {
+        font-size: 15px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    .work {
+        padding-bottom: 20px;
+        &__wrapper {
+            column-gap: 15px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+    .delivery {
+        padding-bottom: 20px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, auto);
+            font-size: 12px;
+        }
+    }
+    .agent {
+        padding-bottom: 20px;
+        &__title {
+            font-size: 22px;
+        }
+        &__descr {
+            font-size: 14px;
+            margin-top: 14px;
+        }
+    }
+    .prices {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, auto);
+            grid-auto-rows: auto;
+            row-gap: 30px;
+        }
     }
 }

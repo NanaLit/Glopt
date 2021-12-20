@@ -1,11 +1,14 @@
-const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+const hamburger = document.querySelector('.header__hamburger'),
+    menu = document.querySelector('.littlemenu'),
+    closeElem = document.querySelector('.littlemenu__close'),
+    overlay = document.querySelector('.header__overlay');
 
 hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+    menu.classList.add('active'),
+    overlay.classList.add('active');
 });
 
 closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
+    menu.classList.remove('active'),
+    overlay.classList.remove('active');
 });

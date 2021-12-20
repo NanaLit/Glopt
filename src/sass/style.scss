@@ -11,10 +11,27 @@
     width: 1140px;
     margin: 0 auto;
 }
-@import 'base/variables.scss';
 
+.description {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color: #2e2e2e;
+    margin: 17px auto 0;
+    width: 70%;
+}
+
+@import 'base/variables.scss';
 @import 'blocks/header.scss';
 @import 'blocks/menu.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/btn.scss';
+@import 'blocks/delivery.scss';
+@import 'blocks/littlemenu.scss';
+@import 'blocks/work.scss';
+@import 'blocks/title.scss';
+@import 'blocks/divider.scss';
+@import 'blocks/agent.scss';
+@import 'blocks/prices.scss';
 @import 'blocks/media.scss';

@@ -11,15 +11,15 @@
     text-transform: uppercase;
     box-shadow: 0;
     transition: 0.3s all;
-        a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        &:hover {
-            box-shadow: 3px 3px 20px $main-color;
-        &:active {
-            border: none;
-        }
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+    }
+    &:active {
+        border: none;
     }
     &_big {
         width: 230px;
@@ -33,4 +33,11 @@
     &_descr {
         display: none;
     }
+    &_card {
+        position: absolute;
+        bottom: 22px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
 }
