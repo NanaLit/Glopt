@@ -39,5 +39,14 @@
         right: 50%;
         transform: translateX(50%);
     }
+    &_form {
+        width: 180px;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        color: #fff;
+        margin: 0 5px;
+    }
 
 }
