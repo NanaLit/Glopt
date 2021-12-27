@@ -40,7 +40,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -213,9 +213,8 @@
     <div class="agent">
         <div class="container">
             <img src="icons/all/agent.png" alt="agent" class="agent__image">
-        <div class="agent__title">Агент в Китае</div>
-        <div class="agent__descr">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.
-        </div>
+            <div class="agent__title">Агент в Китае</div>
+            <div class="agent__descr">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
         </div>
     </div>
     <section class="prices">
@@ -277,7 +276,7 @@
     <div class="consultation">
         <div class="container">
             <div class="consultation__header">Заказать бесплатную консультацию</div>
-            <form action="#" class="consultation__form">
+            <form action="#" class="consultation__form" id="consultation-form">
                 <div class="consultation__img">
                     <img src="icons/all/consultation.png" alt="consultation">
                 </div>
@@ -292,7 +291,120 @@
             </form>
         </div>
     </div>
-
+    <div class="manager">
+        <div class="container">
+            <img src="icons/all/managment.png" alt="manager" class="agent__image">
+            <div class="agent__title">Менеджеры компании</div>
+            <div class="agent__descr">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок,организуют прямые поставки от завода-изготовителя.</div>
+        </div>
+    </div>
+    <section class="scheme">
+        <div class="container">
+            <h3 class="title">Схема работы с нами</h3>
+            <div class="scheme__wrapper">
+                <div class="scheme__item">
+                    <img src="icons/scheme/application.png" alt="application">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle">Заявка</h4>
+                        Вы оставляете заявку на нашем сайте или звоните нам
+                    </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/analiz.png" alt="analiz">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle">Аналитика доставки</h4>
+                        Мы просчитываем варианты доставки Вашего груза
+                    </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/contract.png" alt="contract">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle">Договор</h4>
+                        Заключаем с Вами договор о поставке груза из Китая
+                    </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/ware.png" alt="ware">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle">Доставка на наш склад</h4>
+                    Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад
+                    </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/check.png" alt="check">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle">Проверка груза</h4>
+                        Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе
+                    </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/goods.png" alt="goods">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle subtitle_sch">Доставка груза</h4>
+                        Мы перевозим ваш груз до места назначения и производим таможенную очистку
+                    </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/pay.png" alt="pay">
+                    <div class="scheme__descr">
+                        <h4 class="subtitle">Оплата</h4>
+                        Оплачиваете доставку груза при получении
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carousel">
+        <div class="container">
+            <h3 class="title">отзывы наших клиентов</h3>
+            <div class="divider"></div>
+            <div class="carousel__descr">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
+            <div class="carousel__inner">
+                <div>
+                    <img src="icons/all/olga.png" alt="photo">
+                    <div class="carousel__user">Анисимова Ольга</div>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</p>
+                </div>
+                <div>
+                    <img src="icons/all/olga.png" alt="photo">
+                    <div class="carousel__user">Свинка Пеппа</div>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</p>
+                </div>
+                <div>
+                    <img src="icons/all/olga.png" alt="photo">
+                    <div class="carousel__user">Капризная Царевна</div>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="feedback" id="consultation">
+        <div class="container">
+            <div class="feedback__black">
+                <div class="header">Остались вопросы?</div>
+                <div class="subheader">Напишите нам!</div>
+            </div>
+            <form action="#" class="feedback__form">
+                <div class="feedback__input">
+                    <input name="name" placeholder="Ваше имя" type="text">
+                    <input name="phone" placeholder="Ваш телефон">
+                    <input name="email" placeholder="Ваш E-mail" type="email">
+                    <textarea class="text" rows="2" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="feedback__button">
+                    <button class="btn btn_form">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

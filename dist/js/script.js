@@ -12,3 +12,11 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active'),
     overlay.classList.remove('active');
 });
+
+$(document).ready(function(){
+    $('.carousel__inner').slick({
+        speed: 1200,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/all/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/all/right.png"></button>'
+    });
+});

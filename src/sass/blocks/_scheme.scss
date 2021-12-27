@@ -1,0 +1,31 @@
+.scheme {
+    padding-top: 51px;
+    padding-bottom: 2px;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 44px;
+    }
+    &__item {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 55px;
+            height: 55px;
+            display: block;
+            margin-bottom: 18px;
+        }
+    }
+    &__descr {
+        width: 253px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+        color: #3a3a3a;
+    }
+}

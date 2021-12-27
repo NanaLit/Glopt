@@ -1,0 +1,64 @@
+.carousel {
+    padding-top: 51px;
+    padding-bottom: 65px;
+    &__descr {
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+        margin-top: 17px;
+    }
+    &__inner {
+        position: relative;
+        margin: 31px auto 0;
+        background-color: #fff;
+        width: 600px;
+        img {
+            display: block;
+            margin: 0 auto 19px;
+            width: 114px;
+            height: 114px;
+            border-radius: 100%;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+            color: #3a3a3a;
+        }
+    }
+    &__user {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: center;
+        color: #3a3a3a;
+        margin-bottom: 15px;
+    }
+    .slick-prev {
+        position: absolute;
+        top: 27px;   
+        left: 130px;
+        border: none;
+        background-color: #ffffff;
+        outline: none;
+        z-index: 3;
+        img {
+            width: 14px;
+            height: 47px;
+        }
+    }
+    .slick-next {
+        position: absolute;
+        top: 27px;   
+        right: 130px;
+        border: none;
+        background-color: #ffffff;
+        outline: none;
+        img {
+            width: 14px;
+            height: 47px;
+        }
+    }
+}
