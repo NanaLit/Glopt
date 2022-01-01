@@ -148,6 +148,22 @@
             }
         }
     }
+    .footer {
+        &__logo {
+            span {
+                display: none;
+            }
+        }
+        &__call {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a {
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -229,6 +245,17 @@
             font-size: 14px;
         }
     }
+    .footer {
+        a.footer__phone {
+            display: none;
+        }
+        &__call {
+            span {
+                margin-right: 15px;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -338,6 +365,19 @@
         padding: 30px 0 30px;
         &__form {
             padding: 5px 3px 87px;
+        }
+    }
+    .footer {
+        &__call {
+            span {
+                display: none;
+            }
+        }
+        &__info {
+            flex-direction: column;
+            .policy {
+                margin: 10px 0;
+            }
         }
     }
 }
