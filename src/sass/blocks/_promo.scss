@@ -2,9 +2,7 @@
     padding: 132px 0 81px;
     min-height: 100vh;
     position: relative;
-    background-image: url('../img/promo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('../img/promo.jpg') center center/cover no-repeat;
     &__descr {
         font-size: 24px;
         line-height: 24px;

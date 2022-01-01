@@ -10,6 +10,7 @@
         margin-bottom: 71px;
     }
     &__form {
+        padding-bottom: 30px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -20,11 +21,16 @@
     }
     &__input {
         display: flex;
-        justify-content: center;
+        position: relative;
+        .input-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
         input {
             border: 1px solid rgba(0, 0, 0, 0.21);
             border-radius: 20px;
-            margin: 68px 3px 53px;
+            margin: 68px 3px 23px;
             width: 286px;
             height: 45px;
             padding-left: 34px;
@@ -33,6 +39,11 @@
             line-height: 24px;
             text-align: left;
             color: rgba(16, 16, 16, 0.7);
+        }
+        label.error {
+            font-weight: 300;
+            font-size: 12px;
+            
         }
     }
     &__img {

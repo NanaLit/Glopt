@@ -1,9 +1,7 @@
 .feedback {
     padding: 62px 0 79px;
     min-height: 438px;
-    background-image: url('../img/feedback.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('../img/feedback.jpg') center center/cover no-repeat;
     &__black {
         padding-top: 20px;
         margin: 0 auto;
@@ -34,12 +32,18 @@
         position: relative;
     }
     &__input {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 45px 71px;
+        grid-template-rows: auto 71px;
         grid-auto-rows: auto;
         gap: 7px;
+        .input-wrap {
+            display: flex;
+            flex-direction: column;
+        }
         input {
+            height: 45px;
             border: 1px solid rgba(0, 0, 0, 0.21);
             border-radius: 20px;
             padding-left: 34px;
@@ -62,6 +66,11 @@
             line-height: 24px;
             text-align: left;
             color: rgba(16, 16, 16, 0.7);
+        }
+        label.error {
+            font-weight: 300;
+            font-size: 12px;
+            margin-top: 10px;
         }
     }
     &__button {

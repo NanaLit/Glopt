@@ -281,9 +281,15 @@
                     <img src="icons/all/consultation.png" alt="consultation">
                 </div>
                 <div class="consultation__input">
-                    <input name="name" placeholder="Ваше имя" type="text">
-                    <input name="phone" placeholder="Ваш телефон">
-                    <input name="email" placeholder="Ваш E-mail" type="email">
+                    <div class="input-wrap">
+                        <input name="name" placeholder="Ваше имя" type="text">
+                    </div>
+                    <div class="input-wrap">
+                        <input name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <div class="input-wrap">
+                        <input name="email" placeholder="Ваш E-mail" type="email">
+                    </div>
                 </div>
                 <div class="consultation__button">
                     <button class="btn btn_form">Отправить заявку</button>
@@ -358,7 +364,7 @@
         <div class="container">
             <h3 class="title">отзывы наших клиентов</h3>
             <div class="divider"></div>
-            <div class="carousel__descr">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
+            <div class="description">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
             <div class="carousel__inner">
                 <div>
                     <img src="icons/all/olga.png" alt="photo">
@@ -381,18 +387,24 @@
             </div>
         </div>
     </section>
-    <div class="feedback" id="consultation">
+    <div class="feedback">
         <div class="container">
             <div class="feedback__black">
                 <div class="header">Остались вопросы?</div>
                 <div class="subheader">Напишите нам!</div>
             </div>
-            <form action="#" class="feedback__form">
+            <form action="#" class="feedback__form" id="consultation">
                 <div class="feedback__input">
-                    <input name="name" placeholder="Ваше имя" type="text">
-                    <input name="phone" placeholder="Ваш телефон">
-                    <input name="email" placeholder="Ваш E-mail" type="email">
-                    <textarea class="text" rows="2" placeholder="Сообщение"></textarea>
+                    <div class="input-wrap">
+                        <input name="name" placeholder="Ваше имя" type="text">
+                    </div>
+                    <div class="input-wrap">
+                        <input name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <div class="input-wrap">
+                        <input name="email" placeholder="Ваш E-mail" type="email">
+                    </div>
+                    <textarea name="text" class="text" rows="2" placeholder="Сообщение"></textarea>
                 </div>
                 <div class="feedback__button">
                     <button class="btn btn_form">Отправить заявку</button>
@@ -400,9 +412,29 @@
             </form>
         </div>
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2245.6025958851205!2d37.6273535!3d55.7480336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1640710110030!5m2!1sru!2sru" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contacts">
+                <div class="footer__logo">
+                    <img src="icons/all/logo2.png" alt="logo">
+                    <span>Global Opt - Доставка грузов из Китая в Россию и СНГ</span>
+                </div>
+                <div class="footer__call">
+                    <span>Есть вопросы?</span>
+                    <a href="tel:+79264230100" class="footer__phone">+7 (926) 423 01 00</a>
+                    <button class="btn btn_descr"><a href="tel:+79264230100">Позвоните нам</a></button>
+                </div>
+                <button class="btn btn_footer"><a href="tel:+79264230100">Позвоните нам</a></button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>

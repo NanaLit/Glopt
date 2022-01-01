@@ -1,9 +1,7 @@
 .agent {
     padding-top: 58px;
     padding-bottom: 75px;
-    background-image: url('../img/agent.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('../img/agent.jpg') center center/cover no-repeat;
     &__image {
         width: 102px;
         height: 102px;
